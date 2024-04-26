@@ -1,0 +1,30 @@
+
+<div class="parent">
+  <div
+    class="sidebar"
+    [ngClass]="{
+      showSidebar: isSidebarVisible,
+      hideSidebar: !isSidebarVisible
+    }"
+    [@fadeInOut]
+  >
+    <ul>
+      <li>
+        <a routerLink="/comments" routerLinkActive="active">
+          <span class="menu-icon material-icons">comment</span>
+          <span class="menu-text">Comments</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/users" routerLinkActive="active">
+          <span class="menu-icon material-icons">person_outline
+          </span>
+          <span class="menu-text">Users</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="mainContent">
+    <router-outlet></router-outlet>
+  </div>
+</div>

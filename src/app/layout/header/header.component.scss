@@ -1,0 +1,35 @@
+.header{
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 2em;
+  border-bottom: 3px solid rgb(248, 248, 248);
+}
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.logo{
+  font-size: 3.5em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: rgb(65, 65, 65);
+}
+.welcome{
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 1px; 
+  color: rgb(65, 65, 65);
+}
+.name{
+  font-size: 1.35em;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  color: rgb(65, 65, 65);
+}
+.welcNameDiv{
+  text-align: right;
+}

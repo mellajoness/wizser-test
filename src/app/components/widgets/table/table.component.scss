@@ -1,0 +1,26 @@
+.reusable-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reusable-table th, .reusable-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.8em;
+  width: 100vw;
+  font-size: 0.85em;
+}
+
+.reusable-table th {
+  background-color: #ffffff;
+  text-align: left;
+  color: rgb(156, 156, 156);
+  font-weight: normal;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .reusable-table th, .reusable-table td {
+    padding: 6px;
+  }
+}

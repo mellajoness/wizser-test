@@ -1,0 +1,64 @@
+.parent {
+  padding: 2em;
+}
+.input {
+  height: 40px;
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid rgb(197, 197, 197);
+  margin-top: 0.4em;
+  background: #f3f3f3;
+}
+input:focus,
+textArea:focus {
+  outline: none; /* Remove default focus outline (optional) */
+  border-color: rgb(120, 78, 236); /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+}
+.textArea {
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid rgb(197, 197, 197);
+  margin-top: 0.4em;
+  background: #f3f3f3;
+  min-height: 100px;
+}
+.top {
+  padding-top: 1em;
+}
+.topRow{
+    display: flex;
+    padding-top: 1em;
+    justify-content: space-between;
+}
+
+.half{
+    width: 48%;
+}
+.title {
+  text-align: center;
+}
+.btn {
+  height: 40px;
+  background-color: rgb(120, 78, 236);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 0em 1em;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 2em;
+}
+.btn.disabled-button {
+  background-color: #ccc; /* Change background color when button is disabled */
+  color: #888; /* Change text color when button is disabled */
+  cursor: not-allowed; /* Change cursor style when button is disabled */
+}
+.asteriks{
+    color: tomato;
+    padding-left: 0.1em;
+}
+.smalllabel{
+    font-size: 0.85em;
+    padding-top: 1em;
+}

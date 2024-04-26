@@ -1,0 +1,32 @@
+<div class="parent">
+  <table class="reusable-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+        <th>ADDRESS</th>
+        <th>PHONE</th>
+        <th>WEBSITE</th>
+        <th>COMPANY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of paginationData">
+        <td>{{ item.name }}</td>
+        <td>{{ item.username }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.address.city }}</td>
+        <td>{{ item.phone }}</td>
+        <td>{{ item.website }}</td>
+        <td>{{ item.company.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-pagination
+  [currentPage]="currentPage"
+  [itemsPerPage]="itemsPerPage"
+  [totalItems]="tableData"
+  (pageChanged)="handlePageChanged($event)"
+></app-pagination>

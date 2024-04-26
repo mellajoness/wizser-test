@@ -1,0 +1,16 @@
+<div class="parent">
+  <ul class="pagination">
+    <button (click)="onPageChange(currentPage - 1)" [disabled] ="currentPage===1" class="btn">prev</button>
+    <button
+      class="btn"
+      *ngFor="let page of pages"
+      (click)="onPageChange(page)"
+      [style.color]="currentPage === page ? 'white' : 'black'"
+      [style.background]="currentPage === page ? 'rgb(72, 72, 219)' : ''"
+    >
+      {{ page }}
+    </button>
+    <button class="btn" (click)="onPageChange(currentPage + 1)" [disabled] ="currentPage===pages.length">next</button>
+
+  </ul>
+</div>

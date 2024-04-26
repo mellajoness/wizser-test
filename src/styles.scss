@@ -1,0 +1,20 @@
+body{
+    margin: 0em;
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 4px; /* Set width of the scrollbar */
+  }
+  
+  /* Handle (thumb) of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded corners of the scrollbar handle */
+  }
+  
+  /* Track (background) of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+

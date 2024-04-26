@@ -1,0 +1,90 @@
+
+/* Define a mixin for common styles */
+@mixin menu-item {
+  color: #414141;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 0.3s;
+  margin: 0em 1em;
+
+  .menu-icon {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  .menu-text {
+  }
+}
+
+
+.sidebar {
+  height: 100vh;
+  width:14%;   
+  overflow-x: scroll;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.12);
+  padding-top: 3.5em;
+
+}
+.parent{
+ display: flex;
+}
+.mainContent{
+  width: 86%;
+  // margin: 2em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  line-height: 20px;
+  width:100%;
+}
+
+.sidebar li a {
+  @include menu-item;
+
+  &:hover {
+    background-color: rgb(241, 241, 241);
+    color: #5c5c5c;
+
+  }
+
+  &.active {
+    color: #ffffff;
+    background-color: rgb(120, 78, 236);
+  }
+
+  &.active:hover {
+    // color: #ffffff;
+
+    // box-shadow: 4px 4px 6px #b9b9b9, -4px -4px 6px #ffffff;
+    // background-color: #d5d5d5;
+  }
+}
+
+.sub-menu {
+  padding-left: 0px; /* Adjust the value to your desired padding */
+}
+
+.hideSidebar {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Define the final state when showing */
+.showSidebar {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}

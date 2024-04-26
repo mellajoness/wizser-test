@@ -1,0 +1,152 @@
+<div class="parent">
+  <h2 class="title" mat-dialog-title>New Entry</h2>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label class="label">Name<span class="asteriks">*</span></label>
+      <input
+        type="text"
+        formControlName="name"
+        class="input"
+        placeholder="Enter name"
+      />
+    </div>
+
+    <div class="top">
+      <label class="label">Username<span class="asteriks">*</span></label>
+      <input
+        type="text"
+        formControlName="userName"
+        class="input"
+        placeholder="Enter username"
+      />
+    </div>
+
+    <div class="top">
+      <label class="label">Email<span class="asteriks">*</span></label>
+      <input
+        type="email"
+        formControlName="email"
+        type="email"
+        class="input"
+        placeholder="Enter email"
+      />
+    </div>
+
+    <div class="top">
+      <label class="label">Address</label>
+      <div class="smalllabel">Street<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="street"
+        type="text"
+        class="input"
+        placeholder="Enter Street"
+      />
+
+      <div class="smalllabel">Suite<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="suite"
+        type="text"
+        class="input"
+        placeholder="Enter Suite"
+      />
+
+      <div class="smalllabel">City<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="city"
+        type="text"
+        class="input"
+        placeholder="Enter City"
+      />
+
+      <div class="smalllabel">Zip Code<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="zipCode"
+        type="text"
+        class="input"
+        placeholder="Enter zipcode"
+      />
+    </div>
+
+    <div class="topRow">
+      <div class="half">
+        <div class="label">Longitude<span class="asteriks">*</span></div>
+        <input
+          type="text"
+          formControlName="longitude"
+          type="text"
+          class="input"
+          placeholder="Enter longitude"
+        />
+      </div>
+
+      <div class="half">
+        <div class="label">Latitude<span class="asteriks">*</span></div>
+        <input
+          type="text"
+          formControlName="latitude"
+          type="text"
+          class="input"
+          placeholder="Enter latitude"
+        />
+      </div>
+    </div>
+
+    <div class="top">
+      <label class="label">Phone</label>
+       <input type="text" formControlName="phone" type="number" class="input"  placeholder="Enter phone"/>
+    </div>
+
+    <div class="top">
+      <label class="label">Website</label>
+       <input type="text" formControlName="website" type="text" class="input"  placeholder="Enter website"/>
+    </div>
+
+    <!-- <div class="top">
+      <label class="label">Company</label>
+       <input type="text" formControlName="company" type="text" class="input"/>
+    </div> -->
+
+    <div class="top">
+      <label class="label">Company</label>
+      <div class="smalllabel">Name<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="companyName"
+        type="text"
+        class="input"
+        placeholder="Enter company name"
+      />
+
+      <div class="smalllabel">Catch phrase<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="catchPhrase"
+        type="text"
+        class="input"
+        placeholder="Enter catchphrase"
+      />
+
+      <div class="smalllabel">BS<span class="asteriks">*</span></div>
+      <input
+        type="text"
+        formControlName="title"
+        type="text"
+        class="input"
+        placeholder="Enter title"
+      />
+    </div>
+
+    <button
+      class="btn"
+      type="submit"
+      [disabled]="myForm.invalid"
+      [ngClass]="{ 'disabled-button': myForm.invalid }"
+    >
+      {{ loading ? "...please wait while we validate your request" : "Submit" }}
+    </button>
+  </form>
+</div>

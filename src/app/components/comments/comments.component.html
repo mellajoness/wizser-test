@@ -1,0 +1,15 @@
+<div class="btnParent">
+  <button class="btn" (click)="openDialog()">
+    <span class="menu-icon material-icons">add_circle_outline </span>
+    <span>New Entry</span>
+  </button>
+</div>
+<div class="loader" *ngIf="loading"> 
+  <mat-spinner [diameter]="24" class="custom-spinner"></mat-spinner>
+</div>  
+<div class="parent">
+
+  <app-table [tableData]="comments">
+  </app-table>
+
+</div>

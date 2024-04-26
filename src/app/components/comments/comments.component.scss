@@ -1,0 +1,40 @@
+.parent{
+    display: flex;
+    background-color: white;
+    height: 350px;
+    padding: 2em;
+    overflow: auto;
+    margin-bottom: 3em;
+    border-radius: 4px;
+    margin: 2em;
+}
+.btnParent{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0em 2em;
+}
+.btn{
+    height: 40px;
+    background-color: rgb(120, 78, 236);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 0em 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.6em;
+}
+.custom-spinner {
+    width: 14px; /* Set desired width */
+    height: 14px; /* Set desired height */
+  }

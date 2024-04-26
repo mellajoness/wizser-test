@@ -1,0 +1,27 @@
+<div class="parent">
+    <h2 class="title" mat-dialog-title>New Entry</h2>
+  
+    <form class="form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label class="label">Name</label>
+        <input type="text" formControlName="name" class="input" />
+      </div>
+      
+      <div class="top">
+        <label class="label">Email</label>
+         <input type="email" formControlName="email" type="text" class="input" required/>
+      </div>
+  
+      <div class="top">
+        <label class="label">Body</label>
+         <textarea type="text" formControlName="body" type="text" class="textArea" required></textarea>
+      </div>
+  
+     
+  
+      <button class="btn" type="submit" [disabled]="myForm.invalid || clicked" [ngClass]="{ 'disabled-button': myForm.invalid }">
+        {{ loading ? '...please wait while we validate your request' : "Submit"}}
+      </button>
+    </form>
+  </div>
+  
